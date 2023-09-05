@@ -123,14 +123,12 @@ class DataValidation
     public function personAssociations(string $org_name): array
     {
 
-        // Get the IDs of all persons associated with any organization
         $AssociationsIDs = $this->PERSONS->allPersonsAssociationsIDs();
-        foreach ($AssociationsIDs as $id) {
-            $person = $this->ORGANIZATIONS->searchEntityId($org_name, $id['Associations'][0]['EntityId']);
+        foreach ($AssociationsIDs as $personObject) {
+            $person = $this->ORGANIZATIONS->searchEntityId($org_name, $personObject['Associations'][0]['EntityId']);
             
             if (!empty($person)) {
-                // Append the found person's associations to the result array
-                return $id;
+                return $personObject;
             }
         }
 

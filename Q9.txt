@@ -1,0 +1,15 @@
+Question: What improvements would you
+make to the object model to
+improve your overall workflow
+without impacting the structure in
+the json?
+
+
+Answer: 
+To enhance the overall workflow of the existing object model without making any changes to its fundamental structure, I would consider several improvements.
+First, focusing on implementing a more direct use of key values within the object model, allowing for faster data retrieval through index access.
+Work on defining stronger data types to improve data validation. Currently, many of the models provide arrays of various data types, which can be quite vague. 
+Taking the time to carefully map object properties to the model would provide a more structured and validated approach.
+While it's currently easy to retrieve data by calling specific functions, I've noticed a significant gap in the system: the absence of robust data validation. This is a crucial missing piece that I need to address.
+Additionally, I recommend making corrections in our error handling. At some point, unexpected issues may arise, and our program may not be adequately prepared to handle them.
+In conclusion, I recognize the strengths of Object-Oriented Programming, implementing its advantages more effectively would make the workflow smoother.
